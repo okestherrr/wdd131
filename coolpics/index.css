@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+body, main {
+  font-family: Roboto, sans-serif;
+  background-color: lightgray;
+}
+header,
+footer {
+  margin: 0;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  background-color: rgb(48, 117, 207);
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    justify-items: center;
+}
+h1{
+    text-align: center;
+    color: white;
+} 
+h2{
+    text-align: center;
+    color: black;
+}             
+img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border: 10px solid white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}  
+nav a {
+    padding: 20px;
+    color: white;
+    display: none;
+}
+nav a:hover {
+    text-decoration: none;
+    color: #616061;
+}
+.menu-btn {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+.bar1, .bar2, .bar3 {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    margin: 5px 0;
+}
+footer {
+    text-align: center;
+    color: white;
+}
+
+@media screen and (max-width: 400px) {
+    img {
+        width: 100%;
+        height: auto;
+    }
+    
+}
+@media screen and (min-width: 700px)
+    {
+    main
+    {
+        grid-template-columns: 1fr 1fr;
+    }
+    .menu-btn{
+        display: none;
+    }
+    nav a{
+        display: inline;
+    }
+    nav{
+        text-align: center;
+        gap: 8rem;
+    }
+}
+
+    /*  this one is for wider screens */
+@media screen and (min-width: 1000px) {
+main{
+    grid-template-columns: 1fr 1fr 1fr;
+     gap: 4rem;
+}
+}
