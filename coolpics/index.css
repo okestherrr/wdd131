@@ -25,7 +25,22 @@ h1{
 h2{
     text-align: center;
     color: black;
-}             
+} 
+dialog img {
+    width: 90%;
+    display: block;
+    margin: 20vh auto;
+}
+figure img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    padding: 5px;
+    background-color: white;
+    box-shadow: 5px 5px 15px black;
+    display: block;
+    margin: 0 auto;
+}            
 img {
   width: 300px;
   height: 300px;
@@ -34,6 +49,24 @@ img {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
   margin-bottom: 20px;
 }  
+dialog {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.75);
+}
+.currentwork {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr
+}
+.close-viewer {
+    position: absolute;
+    top: 10vh;
+    right: 2vh;
+    padding: 3px 6px;
+    font-size: 1.5em;
+}
 nav a {
     padding: 20px;
     color: white;
@@ -82,12 +115,31 @@ footer {
         text-align: center;
         gap: 8rem;
     }
+    .currentwork {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
     /*  this one is for wider screens */
 @media screen and (min-width: 1000px) {
-main{
+    .currentwork {
     grid-template-columns: 1fr 1fr 1fr;
      gap: 4rem;
-}
+    }
+    dialog img {
+        width: 60%;
+        margin: 15vh auto;
+    }
+    .close-viewer {
+        position: absolute;
+        right: 15vh;
+    }
+    .viewer {
+        margin: 50px;
+        padding: 50px;
+    }
+    .viewer img {
+        max-width: 800px;
+    }
 }
