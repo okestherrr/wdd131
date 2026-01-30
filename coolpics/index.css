@@ -10,12 +10,16 @@ footer {
   padding: 1rem;
   background-color: rgb(48, 117, 207);
 }
+.header-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
 main {
     display: grid;
     grid-template-columns: 1fr;
     max-width: 1000px;
     margin: 0 auto;
-
+    padding: 0 1rem;
     justify-items: center;
 }
 h1{
@@ -25,11 +29,27 @@ h1{
 h2{
     text-align: center;
     color: black;
+    width: 100%;
+    grid-column: 1 / -1;
 } 
 dialog img {
-    width: 90%;
+    max-width: 700px;
+    width: auto;
+    height: auto;
     display: block;
-    margin: 20vh auto;
+    margin: 10vh auto;
+    border: none;
+    padding: 0;
+}
+dialog {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.75);
+}
+figure {
+    margin: 0;
+    display: flex;
+    justify-content: center;
 }
 figure img {
     width: 250px;
@@ -40,25 +60,13 @@ figure img {
     box-shadow: 5px 5px 15px black;
     display: block;
     margin: 0 auto;
-}            
-img {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-  border: 10px solid white;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-  margin-bottom: 20px;
-}  
-dialog {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,.75);
-}
+}           
 .currentwork {
-    max-width: 1000px;
-    margin: 0 auto;
+    width: 100%;
     display: grid;
-    grid-template-columns: 1fr
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 1rem;
 }
 .close-viewer {
     position: absolute;
@@ -67,25 +75,33 @@ dialog {
     padding: 3px 6px;
     font-size: 1.5em;
 }
+nav {
+    display: none;
+}
+nav.show {
+    display: block;
+}
+nav.show a {
+    display: block;
+    padding: 10px 20px;
+    text-align: center;
+}
 nav a {
     padding: 20px;
     color: white;
-    display: none;
 }
 nav a:hover {
     text-decoration: none;
     color: #616061;
 }
 .menu-btn {
-    cursor: pointer;
     border: none;
     background-color: transparent;
-}
-.bar1, .bar2, .bar3 {
-    width: 30px;
-    height: 4px;
-    background-color: white;
-    margin: 5px 0;
+    display: block;
+    margin: 0 auto;
+    color: white;
+    font-size: 16px;
+    text-align: center;
 }
 footer {
     text-align: center;
@@ -101,45 +117,30 @@ footer {
 }
 @media screen and (min-width: 700px)
     {
-    main
-    {
-        grid-template-columns: 1fr 1fr;
-    }
-    .menu-btn{
-        display: none;
-    }
-    nav a{
-        display: inline;
-    }
-    nav{
-        text-align: center;
-        gap: 8rem;
-    }
+
     .currentwork {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns:1fr 1fr;
+        row-gap: 0.5rem;
+        column-gap: 0.60rem;
+        justify-content: center;
     }
 }
 
     /*  this one is for wider screens */
 @media screen and (min-width: 1000px) {
+    .menu-btn{
+        display: none;
+    }
+    nav {
+        display: block !important;
+        text-align: center;
+    }
     .currentwork {
-    grid-template-columns: 1fr 1fr 1fr;
-     gap: 4rem;
+        grid-template-columns:1fr 1fr 1fr;
+        row-gap: 1rem;
+        justify-content: center;
+        width: 100%;
     }
-    dialog img {
-        width: 60%;
-        margin: 15vh auto;
-    }
-    .close-viewer {
-        position: absolute;
-        right: 15vh;
-    }
-    .viewer {
-        margin: 50px;
-        padding: 50px;
-    }
-    .viewer img {
-        max-width: 800px;
-    }
+
 }
