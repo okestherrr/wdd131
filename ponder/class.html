@@ -3,20 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Student List</title>
+    <style>
+        .format hr {
+            width: 300px;
+        }
+        .details {
+            display: inline;
+            margin-right: 10px;
+        }
+    </style>
 </head>
 <body>
+    <div id="student_container"></div>
+    
     <script>
-    <style>
-        .format, h1{
-            hr{
-                width: 300px;
-            }
-            .details{
-                display: inline;
-            }
-        }
-        </style>
         const student = [
             {
                 last: 'Scott',
