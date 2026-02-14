@@ -8,6 +8,8 @@ h1 {
     font-size: 2.2em;
     text-align: center;
     margin: 20px 0 10px;
+    border-bottom: 1px solid #c9a66b;
+
 }
 
 .main-nav {
@@ -16,7 +18,6 @@ h1 {
     display: flex;
     justify-content: right;
     gap: 20px;
-    border-top: 1px solid #c9a66b;
     border-bottom: 1px solid #c9a66b;
     padding: 0.5rem 0;
 }
@@ -27,8 +28,14 @@ h1 {
     font-weight: bold;
 }
 
+#book-list {
+    display: flex;
+    flex-direction: column;
+}
+
 .book {
     max-width: 600px;
+    width: 100%;
     margin: 2rem auto;
     padding: 1rem;
     display: grid;
@@ -55,7 +62,7 @@ h2 {
     display: block;
 }
 
-#paragraph {
+.book-description {
     text-align: left;
 }
 
@@ -97,7 +104,7 @@ footer {
         max-width: 100%;
     }
 
-    #paragraph {
+    .book-description {
         grid-column: 2;
         grid-row: 3;
         text-align: left;
