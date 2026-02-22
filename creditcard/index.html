@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Form</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js" defer></script>
+</head>
+<body>
+  <form class="card-form">
+    <div class="card-front">
+      <div class="total">
+          <span>TOTAL: $199</span>
+      </div>
+      <span class="card-icon" aria-hidden="true">💳</span>
+      <div class="card-number">
+        <label for="cardNumber">CARD NUMBER</label>
+        <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456">
+      </div>
+      <div class="card-holder">
+          <label for="cardHolder">CARD HOLDER</label>
+          <input type="text" id="cardHolder" name="cardHolder"
+                 placeholder="John Doe">
+      </div>
+        <div id="cardExpiration">
+          <label for="expirationDate">EXPIRATION</label>
+          <input type='text' id='month' name="expMonth" placeholder="MM" aria-labelledby="expirationDate">
+          <input type='text' id='year' name="expYear" placeholder="YY" aria-labelledby="expirationDate">
+        </div>
+    </div>
+    <div class="card-back">
+        <div class="stripe"></div>
+
+        <div class="cvc">
+            <label for="cvc">CVC/CVV</label>
+            <input type="text" id="cvc" name="cvc" placeholder="000">
+        </div>
+    </div>
+
+    <button type="submit">Submit</button>
+    <p id="formMessage" aria-live="message"></p>
+</form>
+</body>
+</html>
