@@ -106,21 +106,23 @@ footer {
   padding-bottom: 20px;
   width: 300px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
 }
 
 footer > a {
-  order: 2;
+  order: 1;
+  text-align: left;
 }
 
 .social {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   gap: 15px;
   margin-top: 0;
-  margin-bottom: 10px;
-  order: 1;
+  margin-bottom: 0;
+  order: 2;
 }
 
 .social img {
