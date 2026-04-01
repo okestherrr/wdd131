@@ -14,7 +14,7 @@ img {
 }
 
 header {
-  background: #b36b8e;
+  background: #7a3f5d;
   color: white;
   padding: 12px 16px;
   display: flex;
@@ -53,7 +53,13 @@ nav {
 
 .nav-link:hover,
 .nav-link.active {
-  background: #d39b8a;
+  background: #7a3f5d;
+  color: #ffffff;
+}
+
+.nav-link:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 2px;
 }
 
 main {
@@ -65,7 +71,7 @@ main {
 }
 
 footer {
-  background: #7baacc;
+  background: #2e5f80;
   color: white;
   text-align: center;
   padding: 12px;
@@ -101,7 +107,7 @@ footer {
 .site-plan-page h5,
 .site-plan-page h6 {
   font-family: "Poppins", Arial, sans-serif;
-  color: #7baacc;
+  color: #2e5f80;
 }
 
 .site-plan-page h2 {
@@ -143,7 +149,7 @@ footer {
 
 .site-plan-page .primary {
   background-color: #7baacc;
-  color: #ffffff;
+  color: #111111;
 }
 
 .site-plan-page .secondary {
@@ -159,14 +165,14 @@ footer {
 }
 
 .site-plan-page p.colored {
-  background-color: #7baacc;
+  background-color: #2e5f80;
   color: #ffffff;
   padding: 1rem;
   border-radius: 8px;
 }
 
 .site-plan-page nav {
-  background-color: #b36b8e;
+  background-color: #7a3f5d;
   line-height: 3em;
   text-align: center;
   font-size: 1.1em;
@@ -184,7 +190,7 @@ footer {
 }
 
 .site-plan-page nav a:hover {
-  background: #a85a7a;
+  background: #2e5f80;
   border-radius: 4px;
 }
 

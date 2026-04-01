@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>StudyFlashCards - Site Plan</title>
+    <title>StudyFlashCards Site Plan</title>
     <link rel="stylesheet" href="site-plan.css" />
     <link
       rel="preconnect"
@@ -22,12 +22,11 @@
   <body>
     <header>
       <div class="logo">
-        <span class="logo-icon" aria-hidden="true">&#9733;</span>
         <span class="logo-text">StudyFlashCards</span>
       </div>
       <nav aria-label="Main navigation">
-        <a href="index.html#home" class="nav-link">Home Page</a>
-        <a href="index.html#study" class="nav-link">Study Session</a>
+        <a href="index.html?page=home" class="nav-link" aria-label="Go to Home section">Home</a>
+        <a href="index.html?page=study" class="nav-link" aria-label="Go to Study Session section">Study Session</a>
       </nav>
     </header>
 
@@ -37,13 +36,13 @@
         <hr />
         <h3>Overview</h3>
         <h4>Purpose</h4>
-        <p>StudyFlashCards is a simple app that helps students study by using digital flashcards.</p>
+        <p>StudyFlashCards is a study app where students can practice with digital flashcards.</p>
 
         <h4>Audience</h4>
-        <p>High school and college students who need to study vocabulary, definitions, and concepts.</p>
+        <p>This site is for high school and college students who need to review vocab, terms, and class concepts.</p>
 
         <h4>Dynamic elements</h4>
-        <p>Users can click cards to flip them, navigate through the deck, shuffle, and mark cards as known or needing review.</p>
+        <p>Users can flip each card, move to the next or previous card, shuffle the deck, and mark cards as known or review.</p>
 
         <hr />
         <h3>Branding</h3>
@@ -80,43 +79,43 @@
         <p><strong>Paragraph Font:</strong> Nunito Sans</p>
 
         <h4>Normal paragraph example</h4>
-        <p>StudyFlashCards is a simple way to study. You look at cards one at a time, flip them over to check the answer, and mark which ones you know. The app keeps track of what you've learned and what you still need to practice.</p>
+        <p>StudyFlashCards makes studying easier. You go through one card at a time, flip it to see the answer, and mark if you know it or need to review it later.</p>
 
         <h4>Colored paragraph example</h4>
-        <p class="colored">Shuffle your cards to mix them up, check your progress, and study whenever you want. StudyFlashCards makes studying less stressful.</p>
+        <p class="colored">You can shuffle cards to mix things up, check your progress, and keep practicing without losing track of what you still need to work on.</p>
 
         <h4>Navigation</h4>
         <nav aria-label="Site plan sample navigation">
-          <a href="#">Home</a>
-          <a href="#">Study Session</a>
-          <a href="#">Progress</a>
+          <a href="index.html?page=home">Home</a>
+          <a href="index.html?page=study">Study Session</a>
+          <a href="index.html?page=study">Progress</a>
         </nav>
 
         <hr />
         <h3>Content</h3>
-        <h4>Home page</h4>
-        <p>Welcome message, instructions, and a "Start Studying" button. Shows the app logo and explains what flashcards do.</p>
-        <p>Images: Logo and simple icons.</p>
-        <p>Data: Number of cards in the deck and progress from the last session.</p>
+        <h4>Home</h4>
+        <p>The Home page has a short welcome message, quick instructions, and a Start Studying button.</p>
+        <p>Images: the app logo and simple visuals.</p>
+        <p>Data shown: total number of cards in the deck.</p>
 
         <h4>Study Session page</h4>
-        <p>Shows one card at a time with a question on front and answer on back. Has buttons for Previous, Next, Shuffle, Known, and Needs Review. Shows progress at the bottom.</p>
-        <p>Sample data: { term: "HTML", definition: "Structure" }, { term: "CSS", definition: "Style" }, { term: "JavaScript", definition: "Behavior" }.</p>
+        <p>This page shows one flashcard at a time with the question on the front and answer on the back. It includes buttons for Previous, Next, Shuffle, Known, and Review, plus a progress bar.</p>
+        <p>Sample data: { term: "Parallelism", definition: "Tasks run at the same time" }, { term: "Concurrency", definition: "Tasks make progress over the same time period" }.</p>
 
         <h3>Wireframes</h3>
-        <p>Two wireframes below show how each page will look.</p>
+        <p>The wireframes below show the basic layout for each page.</p>
         <h4>Home</h4>
-        <p>Top navigation, welcome section, and a big "Start" button.</p>
+        <p>Top navigation, welcome content, and a large Start button.</p>
         <img src="../images/wireframe-home.svg" alt="home page wireframe" />
 
         <h4>Study Session</h4>
-        <p>One card in the middle with buttons below it. Progress bar at the bottom.</p>
+        <p>Flashcard in the center, controls below it, and a progress bar.</p>
         <img src="../images/wireframe-study.svg" alt="study session page wireframe" />
       </section>
     </main>
 
     <footer>
-      <p>&copy; <span id="year"></span> StudyFlashCards &mdash; Esther Scott</p>
+      <p>&copy; <span id="year"></span> Esther Scott</p>
     </footer>
 
     <script>

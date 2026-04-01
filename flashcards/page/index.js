@@ -178,6 +178,8 @@ function showPage(pageId) {
     studyPage.classList.add("active");
     navHome.classList.remove("active");
     navStudy.classList.add("active");
+    navHome.removeAttribute("aria-current");
+    navStudy.setAttribute("aria-current", "page");
   } else {
     homePage.hidden = false;
     studyPage.hidden = true;
@@ -185,7 +187,24 @@ function showPage(pageId) {
     studyPage.classList.remove("active");
     navHome.classList.add("active");
     navStudy.classList.remove("active");
+    navStudy.removeAttribute("aria-current");
+    navHome.setAttribute("aria-current", "page");
   }
+}
+
+function getRequestedPage() {
+  const params = new URLSearchParams(window.location.search);
+  const queryPage = params.get("page");
+  const hashPage = window.location.hash.replace("#", "");
+
+  if (queryPage === "study" || hashPage === "study") {
+    return "study";
+  }
+  return "home";
+}
+
+function showPageFromHash() {
+  showPage(getRequestedPage());
 }
 
 // Reset and show first card
@@ -201,11 +220,13 @@ function resetAndGet() {
 function handleNavToHome(e) {
   e.preventDefault();
   showPage("home");
+  history.replaceState(null, "", "#home");
 }
 
 function handleNavToStudy(e) {
   e.preventDefault();
   showPage("study");
+  history.replaceState(null, "", "#study");
 }
 
 // Start study session
@@ -292,3 +313,6 @@ year.textContent = new Date().getFullYear();
 deckInfo.textContent = "Deck contains " + flashcards.length + " cards.";
 buildDeck();
 getCard();
+showPageFromHash();
+
+window.addEventListener("hashchange", showPageFromHash);

@@ -14,7 +14,7 @@ img {
 }
 
 header {
-  background: #b36b8e;
+  background: #7a3f5d;
   color: white;
   padding: 12px 16px;
   display: flex;
@@ -53,15 +53,21 @@ nav {
 
 .nav-link:hover,
 .nav-link.active {
-  background: #d39b8a;
+  background: #7a3f5d;
+  color: #ffffff;
+}
+
+.nav-link:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 2px;
 }
 
 main {
   flex: 1;
-  max-width: 760px;
+  max-width: 860px;
   margin: 0 auto;
   width: 100%;
-  padding: 20px 16px;
+  padding: 10px 16px 24px;
 }
 
 .page {
@@ -72,26 +78,33 @@ main {
   display: block;
 }
 
+#study {
+  background: white;
+  border-radius: 10px;
+  padding: 20px 16px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+}
+
 .hero,
 .summary {
   background: white;
   border-radius: 10px;
-  padding: 20px 16px;
+  padding: 4px 16px 20px;
   text-align: center;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
 }
 
 .hero-img {
-  margin: 0 auto 10px;
-  width: 150px;
-  height: 150px;
+  margin: 0 auto 0;
+  width: 250px;
+  height: 250px;
 }
 
 h1,
 .section-title,
 .summary h3 {
-  margin: 0 0 10px;
-  color: #7baacc;
+  margin: 0 0 6px;
+  color: #2e5f80;
 }
 
 .hero-desc {
@@ -101,7 +114,7 @@ h1,
 }
 
 .deck-info {
-  color: #b36b8e;
+  color: #7a3f5d;
   font-weight: bold;
   margin-bottom: 12px;
 }
@@ -112,14 +125,14 @@ button {
 
 .btn-primary {
   border: 0;
-  background: #7baacc;
+  background: #2e5f80;
   color: white;
   border-radius: 20px;
   padding: 10px 26px;
 }
 
 .btn-primary:hover {
-  background: #b36b8e;
+  background: #7a3f5d;
 }
 
 .progress-text {
@@ -179,11 +192,11 @@ button {
 
 .card-front {
   background: white;
-  border: 3px solid #7baacc;
+  border: 3px solid #2e5f80;
 }
 
 .card-back {
-  background: #7baacc;
+  background: #2e5f80;
   color: white;
   transform: rotateY(180deg);
 }
@@ -222,7 +235,7 @@ button {
   flex-wrap: wrap;
   justify-content: center;
   gap: 8px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .btn-secondary,
@@ -238,9 +251,9 @@ button {
 }
 
 .btn-outline {
-  border: 2px solid #b36b8e;
+  border: 2px solid #7a3f5d;
   background: white;
-  color: #b36b8e;
+  color: #7a3f5d;
 }
 
 .btn-accent {
@@ -261,7 +274,7 @@ button {
 }
 
 footer {
-  background: #b36b8e;
+  background: #7a3f5d;
   color: white;
   text-align: center;
   padding: 12px;
@@ -271,31 +284,19 @@ footer {
   header {
     flex-direction: row;
     justify-content: space-between;
-    padding: 12px 24px;
+    padding: 12px 32px;
   }
 
   .hero-img {
-    width: 190px;
-    height: 190px;
+    width: 320px;
+    height: 320px;
+  }
+
+  #study {
+    padding: 24px;
   }
 
   .card-scene {
     height: 260px;
   }
-}
-
-
-.site-plan-page nav a {
-  min-width: 120px;
-  text-decoration: none;
-  padding: 0.25rem 0.75rem;
-  border-radius: 6px;
-  font-family: "Nunito Sans", Helvetica, sans-serif;
-  font-weight: 600;
-  color: #ffffff;
-}
-
-.site-plan-page nav a:hover {
-  color: #ffffff;
-  background-color: #d39b8a;
 }
