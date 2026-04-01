@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StudyFlashCards - Site Plan</title>
+    <link rel="stylesheet" href="site-plan.css" />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <span class="logo-icon" aria-hidden="true">&#9733;</span>
+        <span class="logo-text">StudyFlashCards</span>
+      </div>
+      <nav aria-label="Main navigation">
+        <a href="index.html#home" class="nav-link">Home Page</a>
+        <a href="index.html#study" class="nav-link">Study Session</a>
+      </nav>
+    </header>
+
+    <main class="site-plan-container">
+      <section class="site-plan-page" aria-label="Site Plan">
+        <h2>StudyFlashCards Site Plan</h2>
+        <hr />
+        <h3>Overview</h3>
+        <h4>Purpose</h4>
+        <p>StudyFlashCards is a simple app that helps students study by using digital flashcards.</p>
+
+        <h4>Audience</h4>
+        <p>High school and college students who need to study vocabulary, definitions, and concepts.</p>
+
+        <h4>Dynamic elements</h4>
+        <p>Users can click cards to flip them, navigate through the deck, shuffle, and mark cards as known or needing review.</p>
+
+        <hr />
+        <h3>Branding</h3>
+        <h4>Website Logo</h4>
+        <img src="../images/studyflashcards-logo.svg" alt="StudyFlashCards logo image" />
+
+        <hr />
+        <h3>Style Guide</h3>
+        <h4>Color Palette</h4>
+        <p>
+          Palette URL:
+          <a href="https://coolors.co/7baacc-b36b8e-d39b8a-bbc5a9" target="_blank" rel="noopener noreferrer">https://coolors.co/7baacc-b36b8e-d39b8a-bbc5a9</a>
+        </p>
+
+        <table class="colors">
+          <tbody>
+            <tr>
+              <th>Primary</th>
+              <th>Secondary</th>
+              <th>Accent 1</th>
+              <th>Accent 2</th>
+            </tr>
+            <tr>
+              <td class="primary">#7BAACC</td>
+              <td class="secondary">#B36B8E</td>
+              <td class="accent1">#D39B8A</td>
+              <td class="accent2">#BBC5A9</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h4>Typography</h4>
+        <p><strong>Heading Font:</strong> Poppins</p>
+        <p><strong>Paragraph Font:</strong> Nunito Sans</p>
+
+        <h4>Normal paragraph example</h4>
+        <p>StudyFlashCards is a simple way to study. You look at cards one at a time, flip them over to check the answer, and mark which ones you know. The app keeps track of what you've learned and what you still need to practice.</p>
+
+        <h4>Colored paragraph example</h4>
+        <p class="colored">Shuffle your cards to mix them up, check your progress, and study whenever you want. StudyFlashCards makes studying less stressful.</p>
+
+        <h4>Navigation</h4>
+        <nav aria-label="Site plan sample navigation">
+          <a href="#">Home</a>
+          <a href="#">Study Session</a>
+          <a href="#">Progress</a>
+        </nav>
+
+        <hr />
+        <h3>Content</h3>
+        <h4>Home page</h4>
+        <p>Welcome message, instructions, and a "Start Studying" button. Shows the app logo and explains what flashcards do.</p>
+        <p>Images: Logo and simple icons.</p>
+        <p>Data: Number of cards in the deck and progress from the last session.</p>
+
+        <h4>Study Session page</h4>
+        <p>Shows one card at a time with a question on front and answer on back. Has buttons for Previous, Next, Shuffle, Known, and Needs Review. Shows progress at the bottom.</p>
+        <p>Sample data: { term: "HTML", definition: "Structure" }, { term: "CSS", definition: "Style" }, { term: "JavaScript", definition: "Behavior" }.</p>
+
+        <h3>Wireframes</h3>
+        <p>Two wireframes below show how each page will look.</p>
+        <h4>Home</h4>
+        <p>Top navigation, welcome section, and a big "Start" button.</p>
+        <img src="../images/wireframe-home.svg" alt="home page wireframe" />
+
+        <h4>Study Session</h4>
+        <p>One card in the middle with buttons below it. Progress bar at the bottom.</p>
+        <img src="../images/wireframe-study.svg" alt="study session page wireframe" />
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="year"></span> StudyFlashCards &mdash; Esther Scott</p>
+    </footer>
+
+    <script>
+      document.querySelector('#year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,213 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #bbc5a9;
+  color: #1f1f1f;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+header {
+  background: #b36b8e;
+  color: white;
+  padding: 12px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.logo-icon {
+  color: #f4d03f;
+  font-size: 1.4rem;
+}
+
+.logo-text {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+nav {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 16px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  background: #d39b8a;
+}
+
+main {
+  flex: 1;
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 20px 16px;
+}
+
+footer {
+  background: #7baacc;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  font-size: 0.9rem;
+}
+
+.site-plan-container {
+  display: flex;
+  justify-content: center;
+}
+
+.site-plan-page {
+  max-width: 1100px;
+  margin: 2rem auto 0;
+  padding: 2rem;
+  font-size: 18px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.site-plan-page img {
+  display: block;
+  margin: 0.5rem auto 1.5rem;
+  max-width: 100%;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.site-plan-page h2,
+.site-plan-page h3,
+.site-plan-page h4,
+.site-plan-page h5,
+.site-plan-page h6 {
+  font-family: "Poppins", Arial, sans-serif;
+  color: #7baacc;
+}
+
+.site-plan-page h2 {
+  text-align: center;
+}
+
+.site-plan-page hr {
+  height: 3px;
+  margin: 2rem 0;
+  background: #d39b8a;
+  border: 0;
+}
+
+.site-plan-page p,
+.site-plan-page li {
+  font-family: "Nunito Sans", Helvetica, sans-serif;
+  color: #1f1f1f;
+}
+
+.site-plan-page .colors {
+  width: 100%;
+  min-width: 320px;
+  margin: 1.5rem auto;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.site-plan-page .colors th {
+  background-color: #d9d9d9;
+  padding: 0.5rem;
+}
+
+.site-plan-page .colors td {
+  width: 25%;
+  height: 3rem;
+  font-family: "Nunito Sans", Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+.site-plan-page .primary {
+  background-color: #7baacc;
+  color: #ffffff;
+}
+
+.site-plan-page .secondary {
+  background-color: #b36b8e;
+}
+
+.site-plan-page .accent1 {
+  background-color: #d39b8a;
+}
+
+.site-plan-page .accent2 {
+  background-color: #bbc5a9;
+}
+
+.site-plan-page p.colored {
+  background-color: #7baacc;
+  color: #ffffff;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.site-plan-page nav {
+  background-color: #b36b8e;
+  line-height: 3em;
+  text-align: center;
+  font-size: 1.1em;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 8px;
+}
+
+.site-plan-page nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0 1rem;
+}
+
+.site-plan-page nav a:hover {
+  background: #a85a7a;
+  border-radius: 4px;
+}
+
+@media (min-width: 600px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 12px 32px;
+  }
+
+  nav {
+    gap: 20px;
+  }
+
+  .nav-link {
+    padding: 8px 16px;
+  }
+
+  .site-plan-page {
+    padding: 3rem;
+  }
+
+  .site-plan-page .colors {
+    max-width: 600px;
+  }
+}
